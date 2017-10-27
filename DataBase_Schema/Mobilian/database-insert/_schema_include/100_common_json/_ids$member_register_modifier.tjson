@@ -1,0 +1,12 @@
+{
+	"description" : "자사 member ID collection", "type" : "object"
+
+	, "properties" : {
+
+		//등록자 Member ID (FK);
+		"register" : { "description" : "등록자 Member ID(FK)", "exampleValue" : NumberInt( 0 )<include>000_common_txt/uint_len0.txt</include>, "minValue" : NumberInt( 0 ), "maxValue" : NumberInt( 999999999 ) }
+
+		//수정자 Member ID (FK);
+		, "modifier" : { "description" : "수정자 Member ID (FK)", "exampleValue" : NumberInt( 0 )<include>000_common_txt/uint_len0.txt</include>, "minValue" : NumberInt( 0 ), "maxValue" : NumberInt( 999999999 ) }
+	}
+}

@@ -1,0 +1,43 @@
+		<h5 class="ui dividing header">((header__BasicInfo))</h5>
+		<!--
+		doorlock.doorlock.addr_mac
+		-->
+		<div class="field">
+			<label>((lb__MACAddr))</label>
+			<div class="field">
+				<input class="addr_mac" type="text" placeholder="((ph__MACAddr))"><!-- doorlock.doorlock.addr_mac -->
+			</div>
+		</div>
+
+		<!--
+		doorlock.doorlock.date_device_create
+		-->
+		<div class="field">
+			<label>((lb__DateCreate))</label>
+			<div class="six fields">
+				<div class="field">
+					<label>((lb__Date_Y))</label>
+					<input class="date_year" type="number" placeholder="2017">
+				</div>
+				<div class="field">
+					<label>((lb__Date_M))</label>
+					<input class="date_month" type="number" placeholder="9">
+				</div>
+				<div class="field">
+					<label>((lb__Date_D))</label>
+					<input class="date_day" type="number" placeholder="17">
+				</div>
+				<div class="field">
+					<label>((lb__Date_HO))</label>
+					<input class="date_ho" type="number" placeholder="17">
+				</div>
+				<div class="field">
+					<label>((lb__Date_MI))</label>
+					<input class="date_mi" type="number" placeholder="29">
+				</div>
+				<div class="field">
+					<label>((lb__Date_SE))</label>
+					<input class="date_se" type="number" placeholder="33">
+				</div>
+			</div>
+		</div>

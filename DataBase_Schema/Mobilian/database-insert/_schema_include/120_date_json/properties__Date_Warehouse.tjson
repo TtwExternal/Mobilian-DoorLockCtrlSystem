@@ -1,0 +1,4 @@
+{
+	"cd$warehouse" : <include>100_common_json/cd$warehouse.json</include>
+	, "date" : { "description" : "날짜", "properties" : <include>100_common_json/properties__Date_Object.json</include> }
+}

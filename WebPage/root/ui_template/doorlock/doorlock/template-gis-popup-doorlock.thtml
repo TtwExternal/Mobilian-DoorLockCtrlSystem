@@ -1,0 +1,40 @@
+<div class="template-gis-popup-doorlock ui list"">
+	<div class="item">
+		<i class="users icon"></i>
+		<div class="content">{{nm$member_basic}}</div>
+	</div>
+	<div class="item">
+		<i class="steam icon"></i>
+		<div class="content">{{addr_mac}}</div>
+	</div>
+	<div class="item">
+		<i class="marker icon"></i>
+		<div class="content">{{c.1}}, {{c.0}}</div>
+	</div>
+	<div class="item">
+		<i class="info circle icon icon"></i>
+		<div class="content">{{nm$category_status_doorlock}}</div>
+	</div>
+	<div class="item">
+		<i class="add to calendar icon"></i>
+		<div class="content">{{date}}</div>
+	</div>
+	<div class="item">
+		<i class="checked calendar icon"></i>
+		<div class="content">{{date_device_create}}</div>
+	</div>
+	<!--
+	<div class="item">
+		<i class="mail icon"></i>
+		<div class="content">
+			<a href="mailto:admin@mobilian.biz">admin@mobilian.biz</a>
+		</div>
+	</div>
+	-->
+	<div class="item">
+		<i class="linkify icon"></i>
+		<div class="content">
+			<a href="http://mobilian.biz">mobilian.biz</a>
+		</div>
+	</div>
+</div>

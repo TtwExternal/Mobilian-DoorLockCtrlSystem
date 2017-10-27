@@ -1,0 +1,41 @@
+{
+	"title" : "Device Management"
+	, "header__SearchCondition" : "Search Condition"
+	, "lb__ManagementType" : "Management Type"
+	, "txt__SelectManagementType" : "Select management type"
+	, "lb__SMT_Map" : "Map"
+	, "lb__SMT_BP" : "Blueprint"
+	, "lb__DeviceCTRLStatus" : "Device CTRL Status"
+	, "txt__SelectDeviceStatus" : "Device Status Selection"
+
+	, "lb__SearchCriteria" : "Search Criteria"
+	, "txt__SelectSearchCriteria" : "Select search criteria"
+
+	, "lb__SSC_D_Installer" : "Installer"
+	, "lb__SSC_D_MAC" : "MAC Address"
+	, "lb__SSC_D_Key" : "Key"
+
+	, "lb__SearchKeyword" : "Search Keyword"
+	, "ph__SearchValue" : "Input Seach Keyword..."
+	, "header__Controls" : "Function Buttons"
+
+	, "dTooltip__Search" : "Perform search by condition"
+	, "btn__Search" : "Search"
+
+	, "dTooltip__Clear" : "Initialize search conditions"
+	, "btn__Clear" : "Clear"
+
+	, "dTooltip__Add" : "Add a new device"
+	, "btn__Add" : "Add"
+
+	, "dTooltip__InstallDevice" : "Installation Device"
+	, "btn__Install" : "Install"
+
+	, "header__DeviceList" : "Device List"
+	, "th__Num" : "Num"
+	, "th__MAC" : "MAC Address"
+	, "th__ManagementType" : "Management Type"
+	, "th__DeviceCTRLStatus" : "Device CTRL Status"
+	, "th__Register" : "Register"
+	, "th__RegistrationDate" : "Registration Date"
+}

@@ -1,0 +1,144 @@
+<div id="div-doorlock-doorlock-deviceInstall"  class="ui segment"
+	style="width: calc(100% - 300px); max-width: 800px !important;">
+
+
+
+<!--
+도어락 장치 설치
+사용자가 이용한다.
+-->
+
+
+
+	<include-html>./ui_include--Semantic-UI/common-div-title_bar/ModalPanel.min.html</include-html>
+
+
+
+	<div class="ui form">
+
+		<include-html>./ui/doorlock/doorlock/_include-deviceAdd-BasicInformation.thtml</include-html>
+
+
+		<!-- deviceAdd 정보 이후 devieInstall -->
+
+
+		<h5 class="ui dividing header">((header__InstInfo))</h5>
+
+		<!--
+		<div class="field">
+			<div class="two fields">
+				!-- doorlock.doorlock._id$member_basic --
+				<div class="field">
+					<label>Installer</label>
+					<div class="field">
+						<input class="nm$member_basic" type="text" placeholder="송선우">!-- doorlock.doorlock._id$member_basic --
+					</div>
+				</div>
+
+				!-- doorlock.doorlock.cd$category_doorlock_management_type --
+				<div class="field">
+					<label>Management Type</label>
+					<div class="ui fluid selection dropdown">
+						<input type="hidden" class="input-cd$category_doorlock_management_type">
+						<i class="dropdown icon"></i>
+						<div class="default text">Select Management Type</div>
+						<div class="menu">
+							<div class="item" data-value="CDMT001">Map</div>
+							<div class="item" data-value="CDMT002">Blueprint</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		-->
+
+		<div class="field">
+			<div class="two fields">
+				<!-- doorlock.doorlock._id$member_basic -->
+				<div class="field">
+					<label>((lb__Installer))</label>
+					<div class="field">
+						<input class="nm$member_basic" type="text" placeholder="((ph__Installer))"><!-- doorlock.doorlock._id$member_basic -->
+					</div>
+				</div>
+
+				<!--doorlock.doorlock.cd$category_status_doorlock-->
+				<div class="field">
+					<label>((lb__Status_Device))</label>
+					<div class="ui fluid selection dropdown">
+						<input type="hidden" class="input-cd$category_status_doorlock">
+						<i class="dropdown icon"></i>
+						<div class="default text">((txt__SelectDeviceStatus))</div>
+						<div class="menu">
+							<div class="item" data-value="CSDL001">Unknown</div>
+							<div class="item" data-value="CSDL002">Open</div>
+							<div class="item" data-value="CSDL003">Close</div>
+							<div class="item" data-value="CSDL004">Error</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- doorlock.doorlock.key -->
+		<div class="field">
+			<label>((lb__DeviceCTRLKey))</label>
+			<div class="field">
+				<input class="key" type="text" placeholder="((ph__DeviceCTRLKey))"><!-- doorlock.doorlock.key -->
+			</div>
+		</div>
+
+		<!-- doorlock.doorlock.cd$category_doorlock_management_type -->
+		<div class="field">
+			<label>((lb__ManagementType))</label>
+			<div class="ui top attached tabular menu">
+				<a class="item active" data-tab="CDMT001">((lb__ManagementType_Map))</a>
+				<a class="item" data-tab="CDMT002">((lb__ManagementType_BluePrint))</a>
+			</div>
+
+			<div class="ui bottom attached tab segment active" data-tab="CDMT001">
+				<div class="three fields">
+						<div class="field">
+							<label>((lb__CRS))</label>
+							<input class="CRS" type="text" placeholder="EPSG:4326" value="EPSG:4326" readonly><!-- doorlock.doorlock.CRS -->
+						</div>
+						<div class="field">
+							<label>((lb__CoordX))</label>
+							<input class="blueprint_x" type="text" placeholder="((ph__CoordX))"><!-- doorlock.doorlock.x -->
+						</div>
+						<div class="field">
+							<label>((lb__CoordY))</label>
+							<input class="blueprint_y" type="text" placeholder="((ph__CoordY))"><!-- doorlock.doorlock.y -->
+						</div>
+					</div>
+			</div>
+
+			<div class="ui bottom attached tab segment" data-tab="CDMT002">
+				<div class="field">
+					<div class="three fields">
+						<div class="field">
+							<label>((lb__BlueprintID))</label>
+							<input class="_id$blueprint" type="text" placeholder=""><!-- doorlock.doorlock._id$blueprint -->
+						</div>
+						<div class="field">
+							<label>((lb__BlueprintX))</label>
+							<input class="blueprint_x" type="text" placeholder=""><!-- doorlock.doorlock.blueprint_x -->
+						</div>
+						<div class="field">
+							<label>((lb__BlueprintY))</label>
+							<input class="blueprint_y" type="text" placeholder=""><!-- doorlock.doorlock.blueprint_y -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- doorlock.doorlock.addr -->
+		<div class="field">
+			<label>((lb__InstallAddr))</label>
+			<input class="addr" type="text" placeholder="((ph__InstallAddr))"><!-- doorlock.doorlock.addr -->
+		</div>
+
+		<include-html>./ui_include--Semantic-UI/common-div-btns/div_two_ui_buttons-Submit_Cancel.min.html</include-html>
+	</div>
+</div>

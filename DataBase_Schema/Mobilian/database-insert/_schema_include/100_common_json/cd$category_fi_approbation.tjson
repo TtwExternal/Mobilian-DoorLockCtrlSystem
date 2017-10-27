@@ -1,0 +1,9 @@
+{
+	"description" : "FI Approbation type ID (FK) - 재무승인 여부 category 의 category_fi_approbation 컬랙션을 참조"
+
+	<include>000_common_txt/string_default.txt</include>
+
+	, "values" : [ "CFA001", "CFA002", "CFA003" ]
+
+	, "valuesMap" : { "CFA001" : NumberInt( 1 ), "CFA002" : NumberInt( 1 ), "CFA003" : NumberInt( 1 ) }
+}

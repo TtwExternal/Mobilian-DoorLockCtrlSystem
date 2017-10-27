@@ -1,0 +1,21 @@
+{
+	"title" : "Sign In"
+	, "lb__header__System_Name" : "DoorLock Control System"
+
+	, "icon-flag-cn--link" : "./index.cn.html"
+	, "icon-flag-cn--dTooltip" : "China"
+	, "icon-flag-kr--link" : "./index.kr.html"
+	, "icon-flag-kr--dTooltip" : "South Korea"
+	, "icon-flag-us--link" : "./index.us.html"
+	, "icon-flag-us--dTooltip" : "Unite State of America"
+
+	, "lb__signIn_Email" : "Email"
+	, "ph__signIn_Email" : "E-mail address"
+	, "lb__signin_Password" : "Password"
+	, "ph__signIn_Password" : "Password"
+	, "lb__signIn_CheckBox_RememberMe" : "Remember me"
+	, "btn__signIn" : "Sign In"
+	, "txt__forgotYourPW" : "Forgot your password?"
+	, "txt__NewUser" : "New to us?"
+	, "btn__signUp" : "Sign Up"
+}

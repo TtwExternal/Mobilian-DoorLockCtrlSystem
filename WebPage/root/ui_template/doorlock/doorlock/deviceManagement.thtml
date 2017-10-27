@@ -1,0 +1,214 @@
+<div id="div-doorlock-doorlock-deviceManagement" class="ui attached segment"
+	style="width: calc(100% - 300px); max-width: 900px !important; height: calc(100% - 150px) !important;">
+
+
+
+<!--
+도어락 장치 관리 화면
+관리자 등록 / 사용자 설치 / 제어 등
+-->
+
+
+
+	<include-html>./ui_include--Semantic-UI/common-div-title_bar/ModalPanel.min.html</include-html>
+
+
+
+	<div class="ui form" style="height: 100% !important;">
+
+		<div class="fold$target field">
+
+
+
+			<h5 class="ui dividing header">((header__SearchCondition))</h5>
+
+			<!-- Select-Condition -->
+			<div class="field">
+				<div class="two fields">
+					<div class="field">
+						<label>((lb__ManagementType))</label>
+						<div class="ui fluid selection dropdown">
+							<input type="hidden" class="input-cd$category_doorlock_management_type">
+							<i class="dropdown icon"></i>
+							<div class="default text">((txt__SelectManagementType))</div>
+							<div class="menu">
+								<div class="item" data-value="CDMT001">((lb__SMT_Map))</div>
+								<div class="item" data-value="CDMT002">((lb__SMT_BP))</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<label>((lb__DeviceCTRLStatus))</label>
+						<div class="ui fluid selection dropdown">
+							<input type="hidden" class="input-cd$category_status_doorlock">
+							<i class="dropdown icon"></i>
+							<div class="default text">((txt__SelectDeviceStatus))</div>
+							<div class="menu">
+								<!-- 이걸로 교체 해야 할듯 함 - DB 다시 말아야함 -->
+								<!--
+								<div class="item" data-value="CSDLCR001">Open</div>
+								<div class="item" data-value="CSDLCR002">Close</div>
+								<div class="item" data-value="CSDLCR003">Error</div>
+								-->
+								<div class="item" data-value="CSDL001">Unknown</div>
+								<div class="item" data-value="CSDL002">Open</div>
+								<div class="item" data-value="CSDL003">Close</div>
+								<div class="item" data-value="CSDL004">Error</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="two fields">
+				<div class="field">
+					<label>((lb__SearchCriteria))</label>
+					<div class="ui fluid selection dropdown">
+						<input type="hidden" class="input-search_field">
+						<i class="dropdown icon"></i>
+						<div class="default text">((txt__SelectSearchCriteria))</div>
+						<div class="menu">
+							<div class="item" data-value="_id$member_basic">((lb__SSC_D_Installer))</div>
+							<div class="item" data-value="addr_mac">((lb__SSC_D_MAC))</div>
+							<div class="item" data-value="key">((lb__SSC_D_Key))</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--
+				<div class="field">
+					<label>((lb__SearchKeyword))</label>
+					<div class="ui action input">
+						<input type="text" placeholder="((ph__SearchValue))" class="input-search_value">
+						<button class="blue ui icon button">
+							<i class="search icon"></i>
+						</button>
+					</div>
+				</div>
+				-->
+				<include-html>./ui_include--Semantic-UI/common-search/field-searchKeyword-Input-And-Icon-Blue.html</include-html>
+
+
+			</div>
+		</div>
+
+
+
+		<h5 class="fold$target ui dividing header">((header__Controls))</h5>
+
+		<!--
+		<div class="two fields">
+			<div class="field">
+				<div class="blue fluid ui animated fade button" tabindex="0" style="z-index: 0;">
+					<div class="btn_Add visible content">
+						<i class="btn_Add add square icon"></i>
+					</div>
+					<div class="btn_Add hidden content">Add a new device</div>
+				</div>
+			</div>
+			<div class="field">
+				<div class="blue fluid ui animated fade button" tabindex="0" style="z-index: 0;">
+					<div class="btn_Install visible content">Install</div>
+					<div class="btn_Install hidden content">Install Device</div>
+				</div>
+			</div>
+		</div>
+		-->
+		<div class="fold$target four fields">
+
+
+			<!--
+			<div class="field">
+				<button class="btn_Search positive fluid ui icon button" data-tooltip="((dTooltip__Search))" data-position="top center">
+					((btn__Search))
+				</button>
+			</div>
+			<div class="field">
+				<button class="btn_Clear negative fluid ui icon button" data-tooltip="((dTooltip__Clear))" data-position="top center">
+					((btn__Clear))
+				</button>
+			</div>
+			<div class="field">
+				<button class="btn_Add fluid ui icon button" data-tooltip="((dTooltip__Add))" data-position="top center">
+					((btn__Add))
+				</button>
+			</div>
+			-->
+			<include-html>./ui_include--Semantic-UI/common-search-btns/field-btn_Search-field-btn_Clear-field-btn_Add.html</include-html>
+
+
+			<div class="field">
+				<button class="btn_Install fluid ui icon button" data-tooltip="((dTooltip__InstallDevice))" data-position="top center">
+					((btn__Install))
+				</button>
+			</div>
+		</div>
+
+
+
+		<h5 class="fold$target ui dividing header">((header__DeviceList))</h5>
+
+		<div class="field$table$doorlock field" style="overflow-y: auto !important;">
+			<!--
+			<table class="table$doorlock ui fixed single line selectable celled table">
+			<table class="table$doorlock ui single line selectable celled table">
+			-->
+			<table class="table$doorlock ui single line selectable celled table">
+				<thead>
+					<tr>
+						<th class="center aligned">((th__Num))</th>
+						<th>((th__MAC))</th>
+						<th>((th__ManagementType))</th>
+						<th>((th__DeviceCTRLStatus))</th>
+						<th>((th__Register))</th>
+						<th>((th__RegistrationDate))</th>
+					</tr>
+				</thead>
+				<tbody class="tbody$doorlock">
+					<tr>
+						<td class="center aligned">{{_id}}</td>
+						<td>{{addr_mac}}</td>
+						<td>{{nm$category_doorlock_management_type}}</td>
+						<td>{{nm$category_status_doorlock}}</td>
+						<td>{{nm$member_basic}}</td><!-- Register -->
+						<td>{{date}}</td><!-- Registration Date -->
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="field">
+			<div class="navigator-Num$doorlock ui right floated pagination menu">
+				<a class="item$Navi$Left icon item">
+					<i class="item$Navi$Left left chevron icon"></i>
+				</a>
+				<a class="item$Number item">1</a>
+				<a class="item$Number item">2</a>
+				<a class="item$Number item">3</a>
+				<a class="item$Number item">4</a>
+				<a class="item$Number item">5</a>
+				<a class="item$Number item">6</a>
+				<a class="item$Number item">7</a>
+				<a class="item$Number item">8</a>
+				<a class="item$Number item">9</a>
+				<a class="item$Number item">10</a>
+				<!--
+				<a class="item$Number item">11</a>
+				<a class="item$Number item">12</a>
+				<a class="item$Number item">13</a>
+				<a class="item$Number item">14</a>
+				<a class="item$Number item">15</a>
+				-->
+				<a class="item$Navi$Right icon item">
+					<i class="item$Navi$Right right chevron icon"></i>
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</div>

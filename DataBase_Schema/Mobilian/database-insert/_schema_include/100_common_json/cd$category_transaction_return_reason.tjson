@@ -1,0 +1,9 @@
+{
+	"description" : "거래 교환,반품 Category of Code (FK)", "exampleValue" : "CRR001"
+
+	<include>000_common_txt/string_default.txt</include>
+
+	, "values" : [ "CRR001", "CRR002", "CRR999" ]
+
+	, "valuesMap" : { "CRR001 " : NumberInt( 1 ), "CRR002" : NumberInt( 1 ), "CRR999" : NumberInt( 1 )  }
+}

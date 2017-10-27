@@ -1,0 +1,9 @@
+{
+	"description" : "세금계산서 발급 여부"
+
+	<include>000_common_txt/string_len1.txt</include>
+
+	, "values" : [ "0", "1" ]
+
+	, "valuesMap" : { "0" : 1, "1" : 1 }
+}

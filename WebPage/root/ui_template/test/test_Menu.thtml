@@ -1,0 +1,49 @@
+
+<div id="div__test_Menu">
+	<!--
+	<div id="div__test_Menu">
+	<div id="div__test_Menu" class="btn-group-vertical" role="group">
+	-->
+	<div id="div__testMenu_Top">
+		<span>Test Panel - Mobilian-DoorLockCtrlSystem</span>
+	</div>
+
+	<div id="div__test_Menu_List">
+
+		<span class="complete">정상 작동 색상</span>
+		<span class="inComplete">비정상 작동 색상</span>
+
+
+		<hr width="100%">
+
+
+		<h2>Mobilian - Tools</h2>
+
+
+		<hr width="100%">
+
+
+		<a class="complete" onclickeval="window.ui_nodejs_os.info.basic();">
+			NodeJS-OS-Basic</a>
+
+		<hr width="100%">
+
+		<h2>member</h2>
+
+
+		<a class="complete" onclickeval="window.ui_member.common.sign_in();">member-common-sign_in</a>
+		<a class="complete" onclickeval="window.ui_member.common.sign_in.modal();">member-common-sign_in - Modal</a>
+
+		<a class="complete" onclickeval="window.ui_member.public.sign_up();">member-public-sign_up</a>
+		<a class="complete" onclickeval="window.ui_member.public.sign_up.modal();">member-public-sign_up - Modal</a>
+
+
+		<hr width="100%">
+
+
+	</div>
+
+	<div id="div__test_Menu_UIContainer">
+	</div>
+
+</div>

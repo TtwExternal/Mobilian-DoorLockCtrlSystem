@@ -1,0 +1,117 @@
+#div-nodejs-os-info-basic {
+
+	@import (inline) "inline/_inline_div_panel_simple.txt";
+
+
+
+	//border-radius: 5px;
+	border-radius: 0px;
+	color: #000;
+	display: block;
+
+	font-size: 13px;
+
+	height: auto;
+
+	line-height: 20px;
+
+
+
+	.div-content {
+		padding: 20px;
+
+		left: 10px;
+		right: 10px;
+
+		overflow-x: hidden;
+		overflow-y: auto;
+
+
+		>.section-btns {
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+
+			> * { margin-left: 5px; }
+			>.input-checkbox-auto_reload { width: 32px; height: 32px; margin: 0px; }
+			>.input-time_reload { width: 100px; }
+		}
+
+		/*/
+		>.textarea-info {
+			width: 600px;
+			height: 400px;
+		}
+		//*/
+
+		>.section-h {
+			display: flex;
+
+
+			> fieldset {
+				background: #F3F3F3;
+				border: 1px solid #c0c0c0;
+				margin-right: 10px;
+				padding: 0 10px;
+
+				legend {
+					background: #3E3E3E;
+					color: #fff;
+					font-size: 13px;
+					padding: 2px 5px;
+				}
+
+
+				>.section-properties {
+
+					span:nth-of-type( 1 ) { width: 100px; display: inline-block; text-align: right; }
+					span:nth-of-type( 2 ) { width: 100%; color: #FF0000; padding-left: 10px; }
+
+					> ul { line-height: 20px; padding: 0px; }
+				}
+
+				>.section-properties-cpus {
+
+					span:nth-of-type( 1 ) { width: 100px; display: inline-block; text-align: right; }
+					span:nth-of-type( 2 ) { width: 100%; color: #FF0000; padding-left: 10px; }
+
+
+					> ul { line-height: 20px; padding: 0px; }
+					>.ul-cpus {
+						span:nth-of-type( 1 ) { width: 100px; display: inline-block; text-align: right; }
+						span:nth-of-type( 2 ) { width: 100%; color: #FF0000; padding-left: 10px; }
+					}
+				}
+
+				>.section-properties-networkInterfaces {
+
+					> * { margin-top: 10px; margin-bottom: 10px; }
+					> fieldset {
+						background: #F3F3F3;
+						border: 1px solid #c0c0c0;
+						padding: 0 10px;
+
+						legend {
+							background: #3E3E3E;
+							color: #fff;
+							font-size: 13px;
+							padding: 2px 5px;
+						}
+
+						> section {
+							//border-style: solid; border-width: 1px; padding: 5px;
+
+							> ul { line-height: 20px; padding: 0px; }
+							> .ul-networkInterfaces {
+								span:nth-of-type( 1 ) { width: 100px; display: inline-block; text-align: right; }
+								span:nth-of-type( 2 ) { width: 100%; color: #FF0000; padding-left: 10px; }
+							}
+						}
+					}
+				}
+			}
+
+			> fieldset:last-child { margin: 0px !important; }
+		}
+	}
+}

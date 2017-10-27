@@ -1,0 +1,5 @@
+{
+	"description" : "비용 증빙 방식 카테고리 코드(FK)", "exampleValue" : "CEP001"<include>000_common_txt/string_len6.txt</include>
+	, "values" : [ "CEP001", "CEP002", "CEP003" ]
+	, "valuesMap" : { "CEP001" : NumberInt( 1 ), "CEP002" : NumberInt( 1 ), "CEP003" : NumberInt( 1 ) }
+}

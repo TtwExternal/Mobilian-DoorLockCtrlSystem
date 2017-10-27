@@ -1,0 +1,5 @@
+{ "description" : "상품(product_basic)의 현재 상태를 지정하는 카테고리 (FK)", "exampleValue" : "CPS001"
+	<include>000_common_txt/string_len6.txt</include>
+	, "values" : [ "CPS001", "CPS002", "CPS003", "CPS004", "CPS005" ]
+	, "valuesMap" : { "CPS001" : NumberInt( 1 ), "CPS002" : NumberInt( 1 ), "CPS003" : NumberInt( 1 ), "CPS004" : NumberInt( 1 ), "CPS005" : NumberInt( 1 ) }
+}

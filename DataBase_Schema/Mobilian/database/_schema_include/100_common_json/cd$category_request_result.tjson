@@ -1,0 +1,9 @@
+{
+	"description" : "요청 결과 카테고리(FK)"
+
+	<include>000_common_txt/string_len6.txt</include>
+
+	, "values" : [ "CRR001", "CRR002", "CRR003" ]
+
+	, "valuesMap" : { "CRR001" : 1, "CRR002" : 1, "CRR003" : 1 }
+}

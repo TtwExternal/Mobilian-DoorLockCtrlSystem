@@ -1,0 +1,5 @@
+{
+	"description" : "transaction_stock_wearing_req ID (FK) - transaction_stock_wearing_req Collection 을 참조"
+
+	<include>000_common_txt/string_default.txt</include>
+}

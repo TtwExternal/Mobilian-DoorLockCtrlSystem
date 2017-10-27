@@ -1,0 +1,21 @@
+{
+	"title" : "로그인"
+	, "lb__header__System_Name" : "도어락 관리 시스템"
+
+	, "icon-flag-cn--link" : "./index.cn.html"
+	, "icon-flag-cn--dTooltip" : "중국"
+	, "icon-flag-kr--link" : "./index.kr.html"
+	, "icon-flag-kr--dTooltip" : "대한민국"
+	, "icon-flag-us--link" : "./index.us.html"
+	, "icon-flag-us--dTooltip" : "미국"
+
+	, "lb__signIn_Email" : "이메일"
+	, "ph__signIn_Email" : "이메일 주소"
+	, "lb__signin_Password" : "비밀번호"
+	, "ph__signIn_Password" : "비밀번호"
+	, "lb__signIn_CheckBox_RememberMe" : "저장하기"
+	, "btn__signIn" : "로그인"
+	, "txt__forgotYourPW" : "비밀번호 찾기"
+	, "txt__NewUser" : "새로운 사용자 입니까? "
+	, "btn__signUp" : "회원 가입"
+}

@@ -1,0 +1,4 @@
+{
+	"description" : "packing_list_wearing ID (FK) - packing_list_wearing Collection 을 참조"
+	<include>000_common_txt/string_default.txt</include>
+}

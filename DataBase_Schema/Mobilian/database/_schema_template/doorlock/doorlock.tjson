@@ -1,0 +1,104 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//이 Collection에서 검색에 사용되는 Field;
+	, "search_field" : [
+		{
+			"property" : "_id$blueprint"
+			, "label" : "도면 번호"
+		}
+		, {
+			"property" : "_id$member_basic"
+			, "label" : "장치 설치자"
+		}
+		, {
+			"property" : "addr_mac"
+			, "label" : "MAC"
+		}
+		, {
+			"property" : "cd$category_doorlock_management_type"
+			, "label" : "관리 방식"
+		}
+		, {
+			"property" : "cd$category_status_doorlock"
+			, "label" : "장치 상태"
+		}
+		, {
+			"property" : "date"
+			, "label" : "등록 시간"
+		}
+		, {
+			"property" : "date_device_create"
+			, "label" : "장치 생산 일시"
+		}
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//도면 ID;
+		, "_id$blueprint" : { "required" : 1, "description" : "도면 ID", "exampleValue" : 0<include>000_common_txt/uint_len0.txt</include> }
+
+		//장치 설치자;
+		, "_id$member_basic" : { "required" : 1, "description" : "장치를 설치한 사용자", "exampleValue" : 0<include>000_common_txt/uint_len0.txt</include> }
+
+		//장치의 MAC Address;
+		, "addr_mac" : { "required" : 1, "description" : "장치의 MAC Address", "exampleValue" : ""<include>000_common_txt/string_default.txt</include> }
+
+		//Operation Code - 관리 방식 - 지도 또는 도면;
+		, "cd$category_doorlock_management_type" : { "required" : 1, "description" : "Operation Code - 관리 방식", "exampleValue" : "CDMT001"<include>000_common_txt/string_default.txt</include> }
+
+		//장치 상태;
+		, "cd$category_status_doorlock" : { "required" : 1, "exampleValue" : "CSDL001"<include>000_common_txt/string_default.txt</include> }
+
+		//장치가 설치된 장소의 주소;
+		, "addr" : <include>address/address.json</include>
+
+		//장치의 도면상 X 위치;
+		, "blueprint_x" : { "required" : 0, "description" : "장치의 도면상 X 위치"<include>000_common_txt/number_len0.txt</include> }
+
+		//장치의 도면상 Y 위치;
+		, "blueprint_y" : { "required" : 0, "description" : "장치의 도면상 Y 위치"<include>000_common_txt/number_len0.txt</include> }
+
+		//등록 시간 - Document가 생성된 시간;
+		, "date" : { "required" : 1, "description" : "등록 시간 - Document가 생성된 시간", "exampleValue" : "2017-09-06T08:58:48.367Z"<include>000_common_txt/date/date_len0.txt</include> }
+
+		//장치 생산 일시 - ISO Date;
+		, "date_device_create" : { "required" : 1, "description" : "장치 생산 일시 - ISO Date", "exampleValue" : "2017-09-06T08:58:48.367Z"<include>000_common_txt/date/date_len0.txt</include> }
+
+		//장치 제어를 위한 키 값;
+		, "key" : { "required" : 1, "description" : "장치 제어를 위한 키 값", "exampleValue" : "?????"<include>000_common_txt/string_default.txt</include> }
+
+		//장치가 설치된 장소의 Coordinates X;
+		, "x" : { "required" : 1, "description" : "설치된 장소의 Coordinates X"<include>000_common_txt/number_len0.txt</include> }
+
+		//장치가 설치된 장소의 Coordinates Y;
+		, "y" : { "required" : 1, "description" : "설치된 장소의 Coordinates Y"<include>000_common_txt/number_len0.txt</include> }
+	}
+}

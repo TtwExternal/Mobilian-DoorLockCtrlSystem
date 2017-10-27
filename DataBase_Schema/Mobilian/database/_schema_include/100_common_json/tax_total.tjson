@@ -1,0 +1,5 @@
+{
+	"description" : "상품 전체에 대한 Tax 정보 - items 에 대한 전체 가격에 대한 세금을 저장한다. 예상 물류비용등은 제외한다."
+	, "type" : "object"
+	, "properties" : <include>100_common_json/price/properties__Price_with__id$currency_Object.json</include>
+}

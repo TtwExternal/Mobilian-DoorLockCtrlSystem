@@ -1,0 +1,5 @@
+{ "description" : "category partner buyer(FK)", "exampleValue" : "CPB001"
+	<include>000_common_txt/string_default.txt</include>
+	, "values" : [ "CPB001", "CPB002", "CPB003", "CPB004", "CPB005" ]
+	, "valuesMap" : { "CPB001" : NumberInt( 1 ), "CPB002" : NumberInt( 1 ), "CPB003" : NumberInt( 1 ), "CPB004" : NumberInt( 1 ), "CPB005" : NumberInt( 1 ) }
+}

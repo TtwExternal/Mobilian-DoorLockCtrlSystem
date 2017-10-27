@@ -1,0 +1,107 @@
+//----------------------------------------------------------------------------------------------------;
+//var fileNm = "js/b2link/url/global.b2link.url.getServerURLByServers.js";
+//if( console ) console.log( "[ S ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;
+
+//20170906_1501;
+//SYS00***_APIServer를 사용하길 권장함;
+//
+//session_server, b2ker_api_server, brand_portal_api_server, api_server등 삭제 예정임.;
+//
+//excel_server, file_server등도 시스템 코드로 교체 예정;
+
+(function(){
+
+	var _idx = {};
+	var _idxMaxCount = {};
+
+	var _server = {
+
+		//--------------------------------------------------[ S ] - 공용 서버;
+		//사용하는 곳 목록;
+		//B2LiNK-B2Ker-Dev, B2LiNK-BrandPortal-Dev;
+		//SYS0010_APIServer : [ "http://localhost:30000", "http://localhost:30001", "http://localhost:30002" ]
+		//SYS0010_APIServer : [ "http://localhost:30000", "http://localhost:30000", "http://localhost:30000" ]
+		//, session_server : [ "http://localhost:30000", "http://localhost:30001", "http://localhost:30002" ]//B2LiNK-SessionServer-Dev;
+		//, session_server : [ "http://localhost:30000", "http://localhost:30000", "http://localhost:30000" ]//B2LiNK-SessionServer-Dev;
+		//, session_server : [ "http://localhost:45320", "http://localhost:45320", "http://localhost:45320" ]//B2LiNK-BrandPortal-Dev;
+		//, session_server : [ "http://localhost:49320", "http://localhost:49320", "http://localhost:49320" ]//B2LiNK-B2Ker-Dev;
+
+		SYS0010_APIServer : [ "http://211.251.236.148:49320", "http://211.251.236.148:49320", "http://211.251.236.148:49320" ]//B2LiNK-SessionServer-Dev;
+		, session_server : [ "http://211.251.236.148:49320", "http://211.251.236.148:49320", "http://211.251.236.148:49320" ]//B2LiNK-SessionServer-Dev;
+
+
+		//사용하는 곳 목록;
+		//B2LiNK-B2Ker-Dev, B2LiNK-BrandPortal-Dev...;
+		//, file_server : [ "http://localhost:49322", "http://localhost:49322" ]
+		//--------------------------------------------------[ E ] - 공용 서버;
+
+
+		//--------------------------------------------------[ S ] - 비지니스 시스템 서버;
+		//사용하는 곳 목록;
+		//B2LiNK-B2Ker-Dev, ...;
+		//, SYS0020_APIServer : [ "http://localhost:49320", "http://localhost:49320" ]
+		//, b2ker_api_server : [ "http://localhost:49320", "http://localhost:49320" ]
+
+		//사용하는 곳 목록;
+		//B2LiNK-BrandPortal-Dev, ...;
+		//, SYS0030_APIServer : [ "http://localhost:45320", "http://localhost:45320" ]
+		//, api_server : [ "http://localhost:45320", "http://localhost:45320" ]
+		//--------------------------------------------------[ E ] - 비지니스 시스템 서버;
+
+
+		//사용하는 곳 목록;
+		//B2LiNK-B2Ker-Dev, ...;
+		//, excel_server : [ "http://localhost:48320", "http://localhost:48320" ]
+
+		//사용하는 곳 목록;
+		//B2LiNK-B2Ker-Dev, ...;
+		//, excel_web_server : [ "http://localhost:48321", "http://localhost:48321" ]
+
+		//사용하는 곳 목록;
+		//B2LiNK-B2Ker-Dev, ...;
+		//, webhook_server : [ "http://localhost:47320", "http://localhost:47320" ]
+		, webhook_server : [ "http://211.251.236.148:49320", "http://211.251.236.148:49320" ]
+		//, webhook_server : [ "http://222.239.10.122:47320", "http://222.239.10.122:47320" ]
+		//, webhook_server : [ "http://222.239.10.123:49320", "http://222.239.10.123:49320" ]
+	};
+
+	var io, iLen;
+	for( var s in _server )
+	{
+		io = _server[ s ];
+		iLen = io.length;
+		_idxMaxCount[ s ] = iLen;
+		_idx[ s ] = SUtilMath.random( 0, iLen, 0 );
+	}
+
+	/**
+	 * @function
+	 * @param {String} nm_server
+	 * @return {String} url
+	 */
+	global.b2link.url.getServerURLByServers = function( nm_server )
+	{
+		if( !_server[ nm_server ] ) debugger;//없는 서버 이름이 들어옴;
+
+		var r;
+
+		if( _idxMaxCount[ nm_server ] > _idx[ nm_server ] )
+		{
+			r = _server[ nm_server ][ _idx[ nm_server ] ];
+			++_idx[ nm_server ];
+		}
+		else
+		{
+			_idx[ nm_server ] = 0;
+			r = _server[ nm_server ][ _idx[ nm_server ] ];
+		}
+
+		return r;
+	};
+
+})();
+
+//----------------------------------------------------------------------------------------------------;
+//if( console ) console.log( "[ E ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;

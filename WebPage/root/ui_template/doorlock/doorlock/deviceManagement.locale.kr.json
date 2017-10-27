@@ -1,0 +1,41 @@
+{
+	"title" : "장치 관리"
+	, "header__SearchCondition" : "검색 조건"
+	, "lb__ManagementType" : "관리 방식"
+	, "txt__SelectManagementType" : "관리 방식 선택"
+	, "lb__SMT_Map" : "지도"
+	, "lb__SMT_BP" : "도면"
+	, "lb__DeviceCTRLStatus" : "장치 제어 상태"
+	, "txt__SelectDeviceStatus" : "장치 제어 상태 선택"
+
+	, "lb__SearchCriteria" : "검색 기준"
+	, "txt__SelectSearchCriteria" : "검색 기준 선택"
+
+	, "lb__SSC_D_Installer" : "설치자"
+	, "lb__SSC_D_MAC" : "MAC 주소"
+	, "lb__SSC_D_Key" : "Key"
+
+	, "lb__SearchKeyword" : "검색 키워드"
+	, "ph__SearchValue" : "검색 키워드 입력..."
+	, "header__Controls" : "기능 버튼"
+
+	, "dTooltip__Search" : "조건에 맞는 검색"
+	, "btn__Search" : "검색"
+
+	, "dTooltip__Clear" : "검색 조건 초기화"
+	, "btn__Clear" : "초기화"
+
+	, "dTooltip__Add" : "새로운 장치 등록"
+	, "btn__Add" : "등록"
+
+	, "dTooltip__InstallDevice" : "장치 설치"
+	, "btn__Install" : "설치 정보 등록"
+
+	, "header__DeviceList" : "장치 목록"
+	, "th__Num" : "번호"
+	, "th__MAC" : "MAC 주소"
+	, "th__ManagementType" : "관리방식"
+	, "th__DeviceCTRLStatus" : "장치 제어 상태"
+	, "th__Register" : "등록자"
+	, "th__RegistrationDate" : "등록일자"
+}

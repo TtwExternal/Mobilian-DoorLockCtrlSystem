@@ -1,0 +1,18 @@
+{
+	"name": "Mobilian-DoorLockCtrlSystem/APIServer",
+	"description": "Mobilian-DoorLockCtrlSystem/APIServer",
+	"author": {
+		"name": "",
+		"email": "",
+		"url": ""
+	},
+	"bugs": {},
+	"contributors": [],
+	"devDependencies": {},
+	"dependencies": {},
+	"license": "ISC",
+	"main": "APIServer-Electron.js",
+	"scripts": {},
+	"v8Flags": "--expose-gc",
+	"version": "1.0.0"
+}

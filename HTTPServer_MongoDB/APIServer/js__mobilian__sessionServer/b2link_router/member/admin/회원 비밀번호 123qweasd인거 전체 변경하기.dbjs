@@ -1,0 +1,10 @@
+var r = [];
+
+var _db$member = db.getSiblingDB( "member" );
+var _col$member_basic = _db$member.member_basic;
+	_col$member_basic.find({ mpw : "123qweasd" }).forEach( function( doc ){
+		var result = _col$member_basic.update({ _id : doc._id }, { $set : { mpw : "b2labs2017!" } });
+		r.push( doc );
+	});
+
+return r;

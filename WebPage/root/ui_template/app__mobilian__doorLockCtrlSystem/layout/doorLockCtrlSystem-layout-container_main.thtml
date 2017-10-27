@@ -1,0 +1,42 @@
+<div id="doorLockCtrlSystem-layout-container_main">
+
+	<!-- 화면 왼쪽 공간 -->
+	<article class="article-left-container">
+		<!--
+		Map View Component
+		기타 메인 View Component
+		-->
+		<div id="div-doorLockCtrlSystem-ViewContainer" class="div-content">
+		</div>
+	</article>
+
+	<!-- 화면 위쪽 공간 -->
+
+	<article class="article-top-container ui menu" evt_mclick="evt_mClick--article-top-container">
+		<div class="header item">((lb__MenuItem__Header))</div>
+		<a class="menuItem_DashBoard item active">((lb__MenuItem__DashBoard))</a>
+		<a class="menuItem_UserManagement item">((lb__MenuItem__Member_Management))</a>
+		<a class="menuItem_DeviceManagement item">((lb__MenuItem__Device_Management))</a>
+		<a class="menuItem_Statistics item">((lb__MenuItem__Statistics))</a>
+
+		<!-- 회원정보 -->
+		<!--
+		<section class="section-member">
+			<article class="article-longin_status">
+				<input class="input-member_nm" readonly/>
+				<a class="a-signout">Sign out</a>
+			</article>
+		</section>
+		-->
+	</article>
+
+	<!-- 화면 오른쪽 공간 -->
+	<article class="article-right-container">
+	</article>
+
+	<!-- 화면 아래쪽 공간 -->
+	<!--
+	<article class="article-bottom-container">
+	</article>
+	-->
+</div>

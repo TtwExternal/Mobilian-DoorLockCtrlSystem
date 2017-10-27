@@ -1,0 +1,34 @@
+{
+	"title" : "Member Management"
+	, "header__SearchCondition" : "Search Condition"
+	, "lb__AuthorityRule" : "Authority Rule"
+	, "txt__SelectAuthorityRule" : "Select Authority Rule"
+	, "lb__Auth_User" : "User"
+	, "lb__Auth_Admin" : "Admin"
+
+	, "lb__SearchCriteria" : "Search Criteria"
+	, "txt__SelectSearchCriteria" : "Select search criteria"
+
+	, "lb__SSC_M_Name" : "Member Name"
+	, "lb__SSC_M_ID" : "Member ID"
+	, "lb__SSC_M_Email" : "Member Email"
+
+	, "lb__SearchKeyword" : "Search Keyword"
+	, "ph__SearchValue" : "Input Seach Keyword..."
+	, "header__Controls" : "Function Buttons"
+	, "dTooltip__Search" : "Perform search by condition"
+	, "btn__Search" : "Search"
+
+	, "dTooltip__Clear" : "Initialize search conditions"
+	, "btn__Clear" : "Clear"
+
+	, "dTooltip__Add" : "Add new members"
+	, "btn__Add" : "Add"
+
+	, "header__MemberList" : "Member List"
+	, "th__Num" : "Num"
+	, "th__Email" : "Email"
+	, "th__Name" : "Name"
+	, "th__Register" : "Register"
+	, "th__RegistrationDate" : "Registration Date"
+}

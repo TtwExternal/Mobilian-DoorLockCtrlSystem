@@ -1,0 +1,35 @@
+{
+	"title" : "사용자 관리"
+	, "header__SearchCondition" : "검색 조건"
+	, "lb__AuthorityRule" : "사용자 권한"
+	, "txt__SelectAuthorityRule" : "사용자 권한 선택"
+	, "lb__Auth_User" : "일반 사용자"
+	, "lb__Auth_Admin" : "관리자"
+
+	, "lb__SearchCriteria" : "검색 기준"
+	, "txt__SelectSearchCriteria" : "검색 기준 선택"
+
+	, "lb__SSC_M_Name" : "사용자 이름"
+	, "lb__SSC_M_ID" : "사용자 아이디"
+	, "lb__SSC_M_Email" : "사용자 이메일"
+
+	, "lb__SearchKeyword" : "검색 키워드"
+	, "ph__SearchValue" : "검색 키워드 입력..."
+	, "header__Controls" : "기능 버튼"
+
+	, "dTooltip__Search" : "조건에 맞는 검색"
+	, "btn__Search" : "검색"
+
+	, "dTooltip__Clear" : "검색 조건 초기화"
+	, "btn__Clear" : "초기화"
+
+	, "dTooltip__Add" : "새로운 사용자 등록"
+	, "btn__Add" : "등록"
+
+	, "header__MemberList" : "회원 목록"
+	, "th__Num" : "번호"
+	, "th__Email" : "이메일"
+	, "th__Name" : "이름"
+	, "th__Register" : "등록자"
+	, "th__RegistrationDate" : "등록일자"
+}

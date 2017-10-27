@@ -1,0 +1,67 @@
+				<fieldset class="search-panel" style="width: 100%; display: block;">
+					<legend>((lg__condition_search))</legend><!-- 검색 조건 -->
+						<article>
+							<section>
+								<!-- 검색 필드 1단 -->
+								<fieldset>
+									<legend>((lg__condition_select))</legend><!-- 선택 조건 -->
+									<ul class="content">
+										<!-- 부서 선택 -->
+										<li>
+											<span>((lb__category_status_system_approval))</span>
+<!--
+20170404 - 수정 - 송선우 - ui_include에 맞는 include-html로 교체 - 로직은 에러날거라고 생각됨.
+<>./ui_include/select-db-value/category/category_division__cd_div.html</>
+-->
+<include-html>./ui_include/select-db-value/category/category_status_system_approval__cd.html</include-html>
+										</li>
+										<!-- 팀 선택 -->
+										<li>
+											<span>((lb__cd_div_team))</span>
+<!--
+20170404 - 수정 - 송선우 - ui_include에 맞는 include-html로 교체 - 로직은 에러날거라고 생각됨.
+부서 선택에 따른 ui_include의 html 교체 로직 필요
+<>./ui_include/select-db-value/category/category_division_team__cd_div_team.html</>
+-->
+<include-html>./ui_include/select-db-value/category/category_division_team_BID__cd.html</include-html>
+										</li>
+										<!-- 파트 선택 -->
+										<li>
+											<span>((lb__cd_div_part))</span>
+<!--
+20170404 - 추가 - 송선우 - include-html추가 - 로직 사용하는 곳이 없을거라고 생각함.
+부서-팀 선택에 따른 ui_include의 html 교체 로직 필요
+-->
+<include-html>./ui_include/select-db-value/category/category_division_part_BID_BD__cd.html</include-html>
+										</li>
+									</ul>
+								</fieldset>
+								<!-- 검색 필드 2단 -->
+								<fieldset>
+									<legend>((lg__condition_input))</legend><!-- 입력 조건 -->
+									<ul class="content">
+										<!-- 이름 -->
+										<li>
+											<span>((lb__nm))</span>
+											<input type="text" class="find-_nm" value="" />
+										</li>
+										<!-- 이메일 -->
+										<li>
+											<span>((lb__email))</span>
+											<input type="text" class="find-email" value="" />
+										</li>
+									</ul>
+								</fieldset>
+							</section>
+						</article>
+						<!-- 검색 버튼 -->
+						<div class="div_search-btns-wrap">
+							<div class="search-btns">
+<include-html>./ui_include/div/btns__search_reset.html</include-html>
+							</div>
+						</div>
+				</fieldset>
+
+				<fieldset class="search-panel" style="width: 100%; height: 15px; display: none;">
+					<legend>((lg__condition_search))</legend><!-- 검색 조건 -->
+				</fieldset>

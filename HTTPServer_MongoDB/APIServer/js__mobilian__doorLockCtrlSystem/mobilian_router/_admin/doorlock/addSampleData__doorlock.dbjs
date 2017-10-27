@@ -1,0 +1,169 @@
+TtwLog.log( "-- [ S ] - js__mobilian__doorLockCtrlSystem/mobilian_router/_admin/doorlock/addSampleData__doorlock.dbjs" );
+
+//----------------------------------------------------------------------------------------------------;
+
+//	FUNCTION - DEFINE;
+
+//----------------------------------------------------------------------------------------------------;
+
+//----------------------------------------------------------------------------------------------------;
+
+//	DATABASE;
+
+//----------------------------------------------------------------------------------------------------;
+
+//var _db$authority = db.getSiblingDB( "authority" );//인증;
+
+var _db$category = db.getSiblingDB( "category" );//카테고리;
+
+var _db$doorlock = db.getSiblingDB( "doorlock" );//도어락 관련;
+
+var _db$member = db.getSiblingDB( "member" );//회원;
+
+//----------------------------------------------------------------------------------------------------;
+
+//	COLLECTION;
+
+//----------------------------------------------------------------------------------------------------;
+
+
+//--------------------------------------------------authority;
+//var _col$authority_code = _db$authority.authority_code;//인증 코드 목록;
+//--------------------------------------------------authority;
+
+
+//--------------------------------------------------category;
+//var _col$category_doorlock_management_type = _db$category.category_doorlock_management_type;//도어락 장치 관리 방식 카테고리;
+
+var _col$category_status_doorlock = _db$category.category_status_doorlock;//도어랑 장치 상태 코드 카테고리;
+
+//var _col$category_status_doorlock__ctrl_record = _db$category.category_status_doorlock__ctrl_record;//제어하는 도어랑 장치 상태 코드 카테고리;
+
+//var _col$category_status_system_approval = _db$category.category_status_system_approval;//;
+//--------------------------------------------------category;
+
+
+//--------------------------------------------------doorlock;
+//var _col$blueprint = _db$doorlock.blueprint;//도면;
+
+//var _col$control_history = _db$doorlock.control_history;//제어 기록;
+
+//var _col$control_target = _db$doorlock.control_target;//제어 대상;
+var _col$doorlock = _db$doorlock.doorlock;//도어락 장치 정보;
+
+//var _col$file_attachments = _db$doorlock.file_attachments;//도어락 장치 첨부 파일;
+//var _col$installed_photos = _db$doorlock.installed_photos;//도어락 장치 설치 사진;
+//--------------------------------------------------doorlock;
+
+
+//--------------------------------------------------member;
+//var _col$member_basic = _db$member.member_basic;//회원;
+//var _col$member_public = _db$member.member_public;//;
+//--------------------------------------------------member;
+
+
+//----------------------------------------------------------------------------------------------------;
+
+//	DOCUMENT;
+
+//----------------------------------------------------------------------------------------------------;
+
+
+//--------------------------------------------------authority;
+//var _doc$authority_code;
+//--------------------------------------------------authority;
+
+
+//--------------------------------------------------category;
+//var _doc$category_doorlock_management_type;
+
+var _doc$category_status_doorlock;
+
+//var _doc$category_status_doorlock__ctrl_record;
+
+//var _doc$category_status_system_approval;
+//--------------------------------------------------category;
+
+
+//--------------------------------------------------doorlock;
+//var _doc$blueprint;
+
+//var _doc$control_history;
+
+//var _doc$control_target;
+
+var _doc$doorlock;
+
+//var _doc$file_attachments;
+
+//var _doc$installed_photos;
+//--------------------------------------------------doorlock;
+
+
+//--------------------------------------------------member;
+var _doc$member_basic;
+//var _doc$member_public;
+//--------------------------------------------------member;
+
+
+//----------------------------------------------------------------------------------------------------;
+
+//	PARAMETER;
+
+//----------------------------------------------------------------------------------------------------;
+
+var cursor;
+
+var d = <!=data=!>;
+
+var _fp0 = { _id : 1 };
+
+var _p0 = { _id : -1 };
+var _p1 = { cd : "" };
+
+//var _docs$authority_code = _col$authority_code.find({}).toArray();
+
+//----------------------------------------------------------------------------------------------------;
+
+//	validation 시작;
+
+//----------------------------------------------------------------------------------------------------;
+
+
+//--------------------------------------------------[ S ] - Check - cd$authority_cd;
+//_doc$member_basic = _col$member_basic.findOne({ mid : mid });
+//var b_cd$authority_cd;
+//var i=0, iLen=_docs$authority_code.length; for( ; i<iLen; ++i ) if( _doc$member_basic.cd$authority_cd == _docs$authority_code.cd ){ b_cd$authority_cd = 1; break; }
+//if( !b_cd$authority_cd ) return { r : 13, m : "Unauthorized" }//권한 코드 없음 - 불법 코드;
+//--------------------------------------------------[ E ] - Check - cd$authority_cd;
+
+
+//--------------------------------------------------[ S ] - MAC Address 중복 검사;
+//_doc$doorlock = _col$doorlock.findOne({ addr_mac : d.addr_mac }, _fp0 );
+//if( _doc$doorlock ) return { r : 86, m : "IndexKeySpecsConflict", data : "addr_mac Conflict" }//MAC Address 중복;
+//--------------------------------------------------[ E ] - MAC Address 중복 검사;
+
+
+//try{;
+
+//--------------------------------------------------[ S ] - 데이터 추가;
+d._id = NumberInt( _col$doorlock.count() );
+
+_doc$doorlock = _col$doorlock.findOne({ addr_mac : d.addr_mac });
+if( _doc$doorlock )
+{
+	return { r : 86, m : "IndexKeySpecsConflict", data : "MAC Address Conflict" };
+}
+
+d.cd$category_status_doorlock = _col$category_status_doorlock.findOne( { _id : d.cd$category_status_doorlock } ).cd;
+
+cursor = _col$doorlock.insert( d );
+if( !cursor.nInserted ) return { r : 86, m : "IndexKeySpecsConflict", data : "'_id' Conflict" };//_id 충돌 에러 일듯 함;
+//--------------------------------------------------[ E ] - 데이터 추가;
+
+//}catch( e ){ TtwLog.log( e ); return { error : db.runCommand( { getLastError : 1, w : 2, wtimeout : 5000 } ) }; };
+
+var r = { r : 0, m : "OK", data : null };
+
+TtwLog.log( "-- [ E ] - js__mobilian__doorLockCtrlSystem/mobilian_router/_admin/doorlock/addSampleData__doorlock.dbjs" );
+return r;

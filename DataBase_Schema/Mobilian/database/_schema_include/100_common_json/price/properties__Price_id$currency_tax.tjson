@@ -1,0 +1,10 @@
+{
+	//currency;
+	"_id$currency" : { "description" : "Currency", "exampleValue" : 0<include>000_common_txt/uint_len0.txt</include> }
+
+	//Price;
+	, "price" : { "description" : "Price", "exampleValue" : 100<include>000_common_txt/number_len0.txt</include> }
+
+	//TAX;
+	, "tax" : { "description" : "tax", "exampleValue" : 100.0<include>000_common_txt/number_len0.txt</include> }
+}

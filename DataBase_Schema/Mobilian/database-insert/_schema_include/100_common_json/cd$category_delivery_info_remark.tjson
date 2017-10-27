@@ -1,0 +1,7 @@
+{
+	"description" : "Category Delivery Info Remark Code (FK)", "exampleValue" : "CDI001"<include>000_common_txt/string_len6.txt</include>
+
+	, "values" : [ "CDI001", "CDI002", "CDI003" ]
+
+	, "valuesMap" : { "CDI001" : NumberInt( 1 ), "CDI002" : NumberInt( 1 ), "CDI003" : NumberInt( 1 ) }
+}

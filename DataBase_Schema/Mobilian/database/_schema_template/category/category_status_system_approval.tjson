@@ -1,0 +1,54 @@
+{
+	//이 Collection의 명세;
+	"description" : "시스템 사용승인 상태 카테고리"
+
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	, "dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//이 Collection에서 검색에 사용되는 Field;
+	, "search_field" : [
+		{
+			"property" : "cd"
+			, "label" : "코드"
+		}
+		, {
+			"property" : "nm"
+			, "label" : ""
+		}
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//코드;
+		, "cd" : { "description" : "Code of Category(unique value) ", "exampleValue" : "CSDL001"<include>000_common_txt/string_len6.txt</include> }
+
+		//Company Name(Default);
+		, "nm" : <include>100_common_json/name/nm.json</include>
+	}
+}

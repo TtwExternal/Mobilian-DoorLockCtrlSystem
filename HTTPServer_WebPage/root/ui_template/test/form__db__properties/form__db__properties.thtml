@@ -1,0 +1,23 @@
+<div id="test__form__db__properties" style="color: #000;">
+	<style>
+		display: grid;
+		width: 100%
+
+
+
+		a {
+			font-size: 13px;
+		}
+
+		input {
+			display: block;
+			width: 100%;
+		}
+
+		span {
+			display: block;
+		}
+	</style>
+
+	<include-html>./ui_include/input--dbs_cols/input__dbs_cols.html</include-html>
+</div>

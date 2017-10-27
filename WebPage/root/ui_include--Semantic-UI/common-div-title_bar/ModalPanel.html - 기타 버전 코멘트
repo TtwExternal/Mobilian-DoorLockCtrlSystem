@@ -1,0 +1,49 @@
+	<div class="titleBar-ModalPanel ui top attached label">
+		<span style="font-size: 1rem !important;">((title))</span>
+
+		<!--
+		<i class="btn_Minim window minimize icon negative button" evt_mclick="evt_mClick_btn_Close"
+			style="font-size: 1rem !important; position: absolute; right: 39px;">
+		</i>
+
+		<i class="btn_Maxim window maximize icon negative button" evt_mclick="evt_mClick_btn_Close"
+			style="font-size: 1rem !important; position: absolute; right: 19px;">
+		</i>
+
+		<i class="btn_Close window close icon negative button" evt_mclick="evt_mClick_btn_Close"
+			style="font-size: 1rem !important; position: absolute; right: 8px;">
+		</i>
+		-->
+
+		<!--
+		<i class="btn_Minim yellow circle icon negative button" evt_mclick="evt_mClick_btn_Close"
+			style="font-size: 1rem !important; position: absolute; right: 34px;">
+		</i>
+
+		<i class="btn_Maxim green circle icon negative button" evt_mclick="evt_mClick_btn_Close"
+			style="font-size: 1rem !important; position: absolute; right: 17px;">
+		</i>
+
+		<i class="btn_Close red circle icon negative button" evt_mclick="evt_mClick_btn_Close"
+			style="font-size: 1rem !important; position: absolute; right: 0px;">
+		</i>
+		-->
+
+		<div class="btn_Minim field button" evt_mclick="evt_mClick_btn_Close"
+			style="cursor: pointer; position: absolute; top: 8px; right: 34px;"
+			data-tooltip="((Minimize))" data-position="top center">
+			<i class="yellow circle icon negative button" style="font-size: 1rem !important;"></i>
+		</div>
+
+		<div class="btn_Maxim field button" evt_mclick="evt_mClick_btn_Close"
+			style="cursor: pointer; position: absolute; top: 8px; right: 17px;"
+			data-tooltip="((Maximize))" data-position="top center">
+			<i class="green circle icon negative button" style="font-size: 1rem !important;"></i>
+		</div>
+
+		<div class="btn_Close field button" evt_mclick="evt_mClick_btn_Close"
+			style="cursor: pointer; position: absolute; top: 8px; right: 0px;"
+			data-tooltip="((Close))" data-position="top center">
+			<i class="red circle icon negative button" style="font-size: 1rem !important;"> </i>
+		</div>
+	</div>

@@ -1,0 +1,5 @@
+{
+	"description" : "transaction_purchase_order_purchase_res Code(FK) 구매 발주확정서 Collection 식별코드"
+
+	, "exampleValue" : "POC-2017-02-11-PS0-1"<include>000_common_txt/string_default.txt</include>
+}

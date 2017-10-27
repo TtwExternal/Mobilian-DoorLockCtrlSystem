@@ -1,0 +1,7 @@
+{
+	"lb__MenuItem__Header" : "도어락 관리 시스템"
+	, "lb__MenuItem__DashBoard" : "대쉬보드"
+	, "lb__MenuItem__Member_Management" : "사용자 관리"
+	, "lb__MenuItem__Device_Management" : "장치 관리"
+	, "lb__MenuItem__Statistics" : "통계"
+}

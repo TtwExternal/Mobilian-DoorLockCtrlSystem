@@ -1,0 +1,1 @@
+{ "description" : "trade_terms ID (FK) - trade_terms Collection 을 참조", "exampleValue" : 0, "type" : "uint", "length" : 0, "minValue" : 0, "maxValue" : 999999999 }

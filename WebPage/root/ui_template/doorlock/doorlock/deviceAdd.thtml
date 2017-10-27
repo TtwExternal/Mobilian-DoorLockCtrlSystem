@@ -1,0 +1,31 @@
+<div id="div-doorlock-doorlock-deviceAdd" class="ui segment"
+	style="width: calc(100% - 300px); max-width: 800px !important;">
+
+
+
+<!--
+도어락 장치 등록
+관리자만 사용 가능하다.
+-->
+
+
+
+	<include-html>./ui_include--Semantic-UI/common-div-title_bar/ModalPanel.min.html</include-html>
+
+
+
+	<div class="ui form">
+
+		<include-html>./ui/doorlock/doorlock/_include-deviceAdd-BasicInformation.thtml</include-html>
+
+		<h5 class="ui dividing header">((header__Notes))Notes</h5>
+
+		<div class="ui message">
+			<div class="header">((header__Notes_Header))</div>
+			<p>((txt__p_MACAddr)))</p>
+			<p>((txt__p_DateCreate))</p>
+		</div>
+
+		<include-html>./ui_include--Semantic-UI/common-div-btns/div_two_ui_buttons-Submit_Cancel.min.html</include-html>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+{
+	"title" : "Install Device"
+
+	, "header__BasicInfo" : "기본 정보"
+	, "lb__MACAddr" : "MAC 주소"
+	, "ph__MACAddr" : "EE-B6-A6-0E-C4-46"
+	, "lb__DateCreate" : "장치 생산 일자"
+
+	, "lb__Date_Y" : "연도"
+	, "lb__Date_M" : "월"
+	, "lb__Date_D" : "일"
+	, "lb__Date_HO" : "시간"
+	, "lb__Date_MI" : "분"
+	, "lb__Date_SE" : "초"
+
+
+	, "header__InstInfo" : "설치 정보"
+	, "lb__Installer" : "설치자"
+	, "ph__Installer" : "모빌리안"
+
+	, "lb__Status_Device" : "장치 상태"
+	, "txt__SelectDeviceStatus" : "장치 상태를 선택"
+
+	, "lb__DeviceCTRLKey" : "장치 제어 키"
+	, "ph__DeviceCTRLKey" : "?????"
+
+	, "lb__ManagementType" : "관리 방식"
+	, "lb__ManagementType_Map" : "지도"
+	, "lb__ManagementType_BluePrint" : "도면"
+
+	, "lb__CRS" : "좌표계(표준 프로젝션 코드)"
+	, "lb__CoordX" : "경도"
+	, "ph__CoordX" : "-180 ~ 180"
+	, "lb__CoordY" : "위도"
+	, "ph__CoordY" : "-90 ~ 90"
+
+	, "lb__BlueprintID" : "도면 아이디"
+	, "lb__BlueprintX" : "도면상의 X 좌표"
+	, "lb__BlueprintY" : "도면상의 Y 좌표"
+
+	, "lb__InstallAddr" : "설치 주소"
+	, "ph__InstallAddr" : "서울특별시 금천구 벚꽃로 254 월드메르디앙 1차 1505호 우편번호:08511"
+
+	, "btn__Submit" : "확인"
+	, "btn__Cancel" : "취소"
+}

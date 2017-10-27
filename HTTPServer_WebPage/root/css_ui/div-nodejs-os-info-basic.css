@@ -1,0 +1,171 @@
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* DEFINE - ELEMENT - BUTTON */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* DEFINE - ELEMENT - TABLE */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* DEFINE - TRANSITION */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* BOOTSTRAP 3.3.7 - COLORS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* BOOTSTRAP 3.3.7 - COMPONENT */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* BOOTSTRAP 3.3.7 - FORM STATES AND ALERTS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* BOOTSTRAP 3.3.7 - LIST GROUP */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+#div-nodejs-os-info-basic {
+  border: solid 1px #000;
+border-radius: 0px;
+
+//display: inline-table;
+
+position: absolute;
+
+padding: 0px 0px 10px 0px;
+
+background-color: #fff;
+  border-radius: 0px;
+  color: #000;
+  display: block;
+  font-size: 13px;
+  height: auto;
+  line-height: 20px;
+}
+#div-nodejs-os-info-basic .div-content {
+  padding: 20px;
+  left: 10px;
+  right: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*/
+		>.textarea-info {
+			width: 600px;
+			height: 400px;
+		}
+		//*/
+}
+#div-nodejs-os-info-basic .div-content > .section-btns {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+#div-nodejs-os-info-basic .div-content > .section-btns > * {
+  margin-left: 5px;
+}
+#div-nodejs-os-info-basic .div-content > .section-btns > .input-checkbox-auto_reload {
+  width: 32px;
+  height: 32px;
+  margin: 0px;
+}
+#div-nodejs-os-info-basic .div-content > .section-btns > .input-time_reload {
+  width: 100px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h {
+  display: flex;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset {
+  background: #F3F3F3;
+  border: 1px solid #c0c0c0;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset legend {
+  background: #3E3E3E;
+  color: #fff;
+  font-size: 13px;
+  padding: 2px 5px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties span:nth-of-type( 1 ) {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties span:nth-of-type( 2 ) {
+  width: 100%;
+  color: #FF0000;
+  padding-left: 10px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties > ul {
+  line-height: 20px;
+  padding: 0px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-cpus span:nth-of-type( 1 ) {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-cpus span:nth-of-type( 2 ) {
+  width: 100%;
+  color: #FF0000;
+  padding-left: 10px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-cpus > ul {
+  line-height: 20px;
+  padding: 0px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-cpus > .ul-cpus span:nth-of-type( 1 ) {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-cpus > .ul-cpus span:nth-of-type( 2 ) {
+  width: 100%;
+  color: #FF0000;
+  padding-left: 10px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-networkInterfaces > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-networkInterfaces > fieldset {
+  background: #F3F3F3;
+  border: 1px solid #c0c0c0;
+  padding: 0 10px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-networkInterfaces > fieldset legend {
+  background: #3E3E3E;
+  color: #fff;
+  font-size: 13px;
+  padding: 2px 5px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-networkInterfaces > fieldset > section > ul {
+  line-height: 20px;
+  padding: 0px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-networkInterfaces > fieldset > section > .ul-networkInterfaces span:nth-of-type( 1 ) {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset > .section-properties-networkInterfaces > fieldset > section > .ul-networkInterfaces span:nth-of-type( 2 ) {
+  width: 100%;
+  color: #FF0000;
+  padding-left: 10px;
+}
+#div-nodejs-os-info-basic .div-content > .section-h > fieldset:last-child {
+  margin: 0px !important;
+}

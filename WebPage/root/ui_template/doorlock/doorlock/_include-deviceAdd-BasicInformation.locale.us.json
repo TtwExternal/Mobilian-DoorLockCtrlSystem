@@ -1,0 +1,13 @@
+{
+	, "header__BasicInfo" : "Basic Information"
+	, "lb__MACAddr" : "MAC Address"
+	, "ph__MACAddr" : "EE-B6-A6-0E-C4-46"
+	, "lb__DateCreate" : "Create Date"
+
+	, "lb__Date_Y" : "Year"
+	, "lb__Date_M" : "Month"
+	, "lb__Date_D" : "Day"
+	, "lb__Date_HO" : "Hour"
+	, "lb__Date_MI" : "Minute"
+	, "lb__Date_SE" : "Seconds"
+}

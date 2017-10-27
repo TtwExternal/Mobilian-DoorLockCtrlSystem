@@ -1,0 +1,5 @@
+{ "description" : "판매사유 코드 category_sale_reason (FK)", "exampleValue" : "CSR001"
+	<include>000_common_txt/string_default.txt</include>
+	, "values" : [ "CSR001", "CSR002", "CSR003", "CSR999" ]
+	, "valuesMap" : { "CSR001" : 1, "CSR002" : 1, "CSR003" : 1, "CSR999" : 1 }
+}

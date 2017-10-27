@@ -1,0 +1,21 @@
+{
+	"plz_enter_all_infomation__mid": "아이디를 입력하세요"
+	, "plz_enter_all_infomation__checkOverlap": "아이디 중복체크를 하세요"
+	, "plz_enter_all_infomation__email_id" : "이메일 아이디를 입력하세요"
+	, "plz_enter_all_infomation__email_domain" : "이메일 도메인을 입력하세요"
+	, "plz_enter_all_infomation__password" : "비밀번호를 입력하세요"
+	, "plz_enter_all_infomation__password_confirm" : "비밀번호 확인을 입력하세요"
+	, "plz_enter_all_infomation__nm_l" : "이름 - 성을 입력하세요"
+	, "plz_enter_all_infomation__nm_f" : "이름 - 이름을 입력하세요"
+	, "plz_enter_all_infomation__num_phone_cell0" : "휴대폰 - 국가번호를 입력하세요"
+	, "plz_enter_all_infomation__num_phone_cell1" : "휴대폰 - 앞자리 번호를 입력하세요"
+	, "plz_enter_all_infomation__num_phone_cell2" : "휴대폰 - 중간자리 번호를 입력하세요"
+	, "plz_enter_all_infomation__num_phone_cell3" : "휴대폰 - 끝자리 번호를 입력하세요"
+	, "plz_enter_all_infomation__checkbox__terms_agree" : "이용약관에 동의하세요"
+
+	, "available__mid" : "사용 가능한 아이디 입니다."
+	, "unavailable__mid" : "이미 사용중인 아이디 입니다."
+
+	, "succ": "Sign Up Success. \n 관리자의 승인이 있어야 로그인이 가능합니다."
+	, "fail": "Sign Up Failue"
+}

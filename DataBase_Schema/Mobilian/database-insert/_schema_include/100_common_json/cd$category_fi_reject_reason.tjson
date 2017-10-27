@@ -1,0 +1,9 @@
+{
+	"description" : "Category (FK) - 재무승인  거절 사유"
+
+	<include>000_common_txt/string_default.txt</include>
+
+	, "values" : [ "FRR001", "FRR002" ]
+
+	, "valuesMap" : { "FRR001" : NumberInt( 1 ), "FRR002" : NumberInt( 1 ) }
+}

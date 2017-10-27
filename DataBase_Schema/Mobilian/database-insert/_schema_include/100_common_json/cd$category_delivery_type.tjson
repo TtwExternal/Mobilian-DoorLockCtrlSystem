@@ -1,0 +1,9 @@
+{
+			"description" : "Delivery_type ID (FK) - 배송 방식 category 의 delivery type 컬랙션을 참조"
+
+			<include>000_common_txt/string_default.txt</include>
+
+			, "values" : [ "CDT001", "CDT002", "CDT003", "CDT004", "CDT005" ]
+
+			, "valuesMap" : { "CDT001" : NumberInt( 1 ), "CDT002" : NumberInt( 1 ), "CDT003" : NumberInt( 1 ), "CDT004" : NumberInt( 1 ), "CDT005" : NumberInt( 1 ) }
+		}

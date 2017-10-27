@@ -1,0 +1,89 @@
+<div id="div-nodejs-os-info-basic">
+
+	<include-html>./ui_include/common-div-title_bar/ModalPanel.html</include-html>
+
+	<div class="div-content">
+
+		<section class="section-btns">
+			<input class="input-checkbox-auto_reload" type="checkbox"/>
+			<input class="input-time_reload" type="number" value="500"/>
+			<include-html>./ui_include/common-selector-btn/reload.html</include-html>
+		</section>
+
+		<!--
+		<textarea class="textarea-info"/>
+		-->
+
+		<section class="section-h">
+			<fieldset><legend>기본 속성</legend>
+			<section class="section-properties">
+				<ul>
+					<li class="EOL"><span>EOL</span><span></span></li>
+					<li class="arch"><span>Architecture</span><span></span></li>
+					<li class="cpus"><span>CPUs</span><span></span></li>
+					<li class="endianness"><span>Endianness</span><span></span></li>
+					<li class="freemem"><span>Free Memory</span><span></span></li>
+					<li class="homedir"><span>Home Directory</span><span></span></li>
+					<li class="hostname"><span>Host Name</span><span></span></li>
+					<li class="loadavg"><span>Load AVG</span><span></span></li>
+					<li class="networkInterfaces"><span>Network Interfaces</span><span></span></li>
+					<li class="platform"><span>Platform</span><span></span></li>
+					<li class="release"><span>Release</span><span></span></li>
+					<li class="tmpDir"><span>Temp Directory</span><span></span></li>
+					<li class="tmpdir"><span>Temp Directory</span><span></span></li>
+					<li class="totalmem"><span>Total Memory</span><span></span></li>
+					<li class="type"><span>Type</span><span></span></li>
+					<li class="uptime"><span>UP Time</span><span></span></li>
+					<li class="userInfo">
+						<span>User Info</span>
+						<ul>
+							<li><span>gid</span><span>{{gid}}</span></li>
+							<li><span>homedir</span><span>{{homedir}}</span></li>
+							<li><span>shell</span><span>{{shell}}</span></li>
+							<li><span>uid</span><span>{{uid}}</span></li>
+							<li><span>username</span><span>{{username}}</span></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			</fieldset>
+
+			<fieldset><legend>Network Interfaces</legend>
+			<section class="section-properties-networkInterfaces">
+				<fieldset><legend>- {{networkInterfaces__name}}</legend>
+				<section>
+					<ul class="ul-networkInterfaces">
+						<hr/>
+						<li><span>address</span><span>{{address}}</span></li>
+						<li><span>family</span><span>{{family}}</span></li>
+						<li><span>internal</span><span>{{internal}}</span></li>
+						<li><span>mac</span><span>{{mac}}</span></li>
+						<li><span>netmask</span><span>{{netmask}}</span></li>
+						<li><span>scopeid</span><span>{{scopeid}}</span></li>
+					</ul>
+				</section>
+				</fieldset>
+			</section>
+			</fieldset>
+
+			<fieldset><legend>CPUs</legend>
+			<section class="section-properties-cpus">
+				<span>CPUs</span>
+				<ul class="ul-cpus">
+					<hr/>
+					<li><span>Model</span><span>{{model}}</span></li>
+					<li><span>Speed</span><span>{{speed}}</span></li>
+					<li><span>Times.idle</span><span class="times-idle">{{times.idle}}</span></li>
+					<li><span>Times.irq</span><span class="times-irq">{{times.irq}}</span></li>
+					<li><span>Times.nice</span><span>{{times.nice}}</span></li>
+					<li><span>Times.sys</span><span class="times-sys">{{times.sys}}</span></li>
+					<li><span>Times.user</span><span class="times-user">{{times.user}}</span></li>
+				</ul>
+			</section>
+			</fieldset>
+
+		</section>
+
+	</div>
+
+</div>

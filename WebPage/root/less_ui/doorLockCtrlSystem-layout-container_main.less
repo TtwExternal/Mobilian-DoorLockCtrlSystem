@@ -1,0 +1,139 @@
+//----------------------------------------------------------------------------------------------------;
+
+@w_rightContainer: 200px;
+@h_topContainer: 50px;
+@h_bottomContainer: 0px;
+
+//----------------------------------------------------------------------------------------------------;
+
+#doorLockCtrlSystem-layout-container_main {
+
+	position: absolute !important;
+	left: 0px; right: 0px; bottom: 0px; top: 0px;
+	width: 100%;
+	height: 100%;
+
+
+
+	.article-left-container {
+		position: absolute !important;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		//right: @w_rightContainer;
+		top: @h_topContainer;
+
+		//height: ~"calc(100vh - @{h_bottomContainer})";
+
+
+
+		#div-doorLockCtrlSystem-ViewContainer {
+			display: block;
+			position: relative !important;
+
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+
+	.article-right-container {
+		position: absolute !important;
+
+		top: @h_topContainer;
+		right: 0px;
+
+		height: ~"calc(100vh - @{h_topContainer})";
+
+		max-width: @w_rightContainer;
+		min-width: @w_rightContainer;
+
+		padding: 5px;
+
+		background-color: rgba(0,0,0,0.5);
+		border: 0;
+		color: #fff;
+	}
+
+
+
+	.article-top-container {
+		position: absolute !important;
+		left: 0px;
+		top: 0px;
+		right: 0px;
+
+		//max-height: @h_topContainer;
+		//min-height: @h_topContainer;
+
+		//background-color: #4285f4;
+
+		//Custom;
+		margin: 0px;
+		border-radius: 0px;
+
+
+		/*/
+		.section-menu {
+			.ul-topmenu-list {
+				list-style: none;
+				padding-left: 20px;
+				font-size: 20px;
+
+				li {
+					float: left;
+					color: #FFF;
+					padding-left: 40px;
+				}
+			}
+		}
+		//*/
+
+		/*/
+		.section-member {
+			right: 0px;
+			position: fixed;
+
+			.article-longin_status {
+
+				color: #FFF;
+				text-align: right;
+				background-color: #4285f4;
+
+				input {
+					width: 130px;
+					color: #FFF;
+					text-align: right;
+					letter-spacing: 1px;
+					font-weight: bold;
+					border-width: 0px;
+					background-color: #4285f4;
+				}
+
+				a.a-signout {
+					color: #FFF;
+					padding: 10px;
+					text-decoration: underline;
+					cursor: pointer;
+				}
+			}
+		}
+		//*/
+	}
+
+
+
+	/*/
+	.article-bottom-container {
+		position: absolute !important;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+
+		height: @h_bottomContainer;
+
+		background-color: #4285f4;
+	}
+	//*/
+}

@@ -1,0 +1,4 @@
+ {
+	"description" : "상품 전체에 대한 상품가격(세액제외) - items 에 대한 전체 가격을 포함한다. 예상 물류비용등은 제외한다. 실제 구매가와 다를수 있다.", "type" : "object"
+	, "properties" : <include>100_common_json/price/properties__Price_with__id$currency_Object.json</include>
+}

@@ -1,0 +1,23 @@
+{
+	"title" : "Add Device"
+
+	, "header__BasicInfo" : "기본 정보"
+	, "lb__MACAddr" : "MAC 주소"
+	, "ph__MACAddr" : "EE-B6-A6-0E-C4-46"
+	, "lb__DateCreate" : "장치 생산 일자"
+
+	, "lb__Date_Y" : "연도"
+	, "lb__Date_M" : "월"
+	, "lb__Date_D" : "일"
+	, "lb__Date_HO" : "시간"
+	, "lb__Date_MI" : "분"
+	, "lb__Date_SE" : "초"
+
+	, "header__Notes" : "주의점"
+	, "header__Notes_Header" : "장치(도어락) 추가 시 필수 값"
+	, "txt__p_MACAddr" : "- MAC 주소"
+	, "txt__p_DateCreate" : "- 장치 생산 일자"
+
+	, "btn__Submit" : "확인"
+	, "btn__Cancel" : "취소"
+}

@@ -1,0 +1,5 @@
+{
+	"description" : "transaction_stock_wearing_req ID(FK) - transaction_stock_wearing_req 컬랙션에서 ID를 참조한다."
+
+	<include>000_common_txt/string_default.txt</include>
+}

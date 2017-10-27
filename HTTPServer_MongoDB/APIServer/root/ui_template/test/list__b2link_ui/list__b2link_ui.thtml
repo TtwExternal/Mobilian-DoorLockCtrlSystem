@@ -1,0 +1,9 @@
+<div id="test__list__b2link_ui" style="color: #000; display: inline-grid; font-size: 15px;" evt_mclick="evt_mClick_call_ui_api">
+	<style>
+		display: block;
+	</style>
+
+	<h2>LIST - b2link_ui*** API</h2>
+<include-html>./ui_include/test/list__b2link_ui.html</include-html>
+
+</div>

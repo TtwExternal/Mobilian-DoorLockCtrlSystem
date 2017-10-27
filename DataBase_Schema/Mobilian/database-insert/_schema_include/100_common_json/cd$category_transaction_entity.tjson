@@ -1,0 +1,9 @@
+{
+	"description" : "거래 방식을 지정하는 카테고리", "exampleValue" : "CTE001"
+
+	<include>000_common_txt/string_default.txt</include>
+
+	, "values" : [ "CTE001", "CTE002", "CTE003"]
+
+	, "valuesMap" : { "CTE001" : NumberInt( 1 ), "CTE002" : NumberInt( 1 ), "CTE003" : NumberInt( 1 )}
+}

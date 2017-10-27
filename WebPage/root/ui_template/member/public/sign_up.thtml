@@ -1,0 +1,125 @@
+<div id="div-member-public-sign_up" class="ui segment"
+	style="width: calc(100% - 300px); max-width: 800px !important;">
+
+
+
+<!--
+SIGN UP
+관리자만 사용 가능
+-->
+
+
+
+	<include-html>./ui_include--Semantic-UI/common-div-title_bar/ModalPanel.min.html</include-html>
+
+
+
+	<div class="ui form">
+
+		<h5 class="ui dividing header">((header__BasicInfo))</h5>
+		<!--
+		member.member_basic.nm
+		-->
+		<div class="field">
+			<label>((lb__BasicInfo_Name))</label>
+			<div class="two fields">
+				<div class="field">
+					<input class="nm_f" type="text" placeholder="((ph__BasicInfo_Name_First))"><!-- member.member_basic.f -->
+				</div>
+				<div class="field">
+					<input class="nm_l" type="text" placeholder="((ph__BasicInfo_Name_Last))"><!-- member.member_basic.l -->
+				</div>
+			</div>
+		</div>
+
+		<!--
+		member.member_basic.email
+		member.member_basic.mid
+		-->
+		<div class="field">
+			<label>((lb__BasicInfo_Email))</label>
+			<div class="two fields">
+				<div class="field">
+					<input class="mid" type="text" placeholder="((ph__BasicInfo_Email))">
+				</div>
+				<div class="field">
+					<button class="btn-check_overlap fluid ui button">((btn__OverlapCheck))</button>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		member.member_basic.mpw
+		-->
+		<div class="field">
+			<label>((lb__BasicInfo_PW))Password</label>
+			<div class="two fields">
+				<div class="field">
+					<input type="password" placeholder="((ph__BasicInfo_PW))" class="password">
+				</div>
+				<div class="field">
+					<input type="password" placeholder="((ph__BasicInfo_PW_C))" class="password_confirm">
+				</div>
+			</div>
+		</div>
+
+		<!-- member.member_basic.phone_cell -->
+		<div class="field">
+			<label>((lb__BasicInfo_Phone))</label>
+			<div class="fields">
+				<div class="four wide field">
+					<input class="num_phone_cell0" type="text" placeholder="+82"><!-- member.member_basic.phone_cell.c -->
+				</div>
+				<div class="four wide field">
+					<input class="num_phone_cell1" type="text" placeholder="10"><!-- member.member_basic.phone_cell.a -->
+				</div>
+				<div class="four wide field">
+					<input class="num_phone_cell2" type="text" placeholder="5555"><!-- member.member_basic.phone_cell.n0 -->
+				</div>
+				<div class="four wide field">
+					<input class="num_phone_cell3" type="text" placeholder="4444"><!-- member.member_basic.phone_cell.n1 -->
+				</div>
+			</div>
+		</div>
+
+		<!-- member.member_basic.cd$authority_code -->
+		<div class="field">
+			<label>((lb__BasicInfo_Auth))</label>
+			<div class="ui fluid selection dropdown">
+				<input type="hidden" class="input-cd$authority_code">
+				<i class="dropdown icon"></i>
+				<div class="default text">((txt__SelectAuthCD))</div>
+				<div class="menu">
+					<div class="item" data-value="2000001">((lb__AuthCD_User))</div>
+					<div class="item" data-value="1000001">((lb__AuthCD_Admin))</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<h5 class="ui dividing header">DoorLockCTRLSystem Terms of Use</h5>
+		<h5 class="ui dividing header">Mobilian General Terms of Use</h5>
+		<h5 class="ui dividing header">Mobilian Terms of Use</h5>
+		-->
+		<h5 class="ui dividing header">((header__Terms))</h5>
+
+		<div class="ui message" style="max-height: 200px; overflow-y: auto;">
+			<div class="header">((header__Terms_Title))</div>
+			<p>((txt__Terms_MainText))</p>
+		</div>
+
+		<div class="ui segment">
+			<div class="field">
+				<div class="ui toggle checkbox">
+					<input class="checkbox__terms_agree" type="checkbox">
+					<label>((lb__TermsOfUse))</label>
+				</div>
+			</div>
+		</div>
+
+		<include-html>./ui_include--Semantic-UI/common-div-btns/div_two_ui_buttons-Submit_Cancel.min.html</include-html>
+	</div>
+
+
+
+</div>

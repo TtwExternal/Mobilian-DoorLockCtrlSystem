@@ -1,0 +1,76 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//이 Collection에서 검색에 사용되는 Field;
+	, "search_field" : [
+		{
+			"property" : "_id$member_basic"
+			, "label" : "작성자"
+		}
+		, {
+			"property" : "date"
+			, "label" : "등록 시간"
+		}
+		, {
+			"property" : "nm_file"
+			, "label" : "첨부 파일 이름"
+		}
+		, {
+			"property" : "path_file"
+			, "label" : "첨부 파일 경로"
+		}
+		, {
+			"property" : "size"
+			, "label" : "첨부 파일 용량"
+		}
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//첨부 파일을 생성한 사용자;
+		, "_id$member_basic" : { "required" : 1, "description" : "첨부 파일을 생성한 사용자", "exampleValue" : 0<include>000_common_txt/uint_len0.txt</include> }
+
+		//컨텐츠 타입;
+		, "content_type" : { "required" : 1, "exampleValue" : ""<include>000_common_txt/string_default.txt</include> }
+
+		//등록 시간 - Document가 생성된 시간;
+		, "date" : { "required" : 1, "description" : "등록 시간 - Document가 생성된 시간", "exampleValue" : "2017-09-06T08:58:48.367Z"<include>000_common_txt/date/date_len0.txt</include> }
+
+		//첨부 파일 이름;
+		, "nm_file" : { "required" : 1, "description" : "첨부 파일 이름", "exampleValue" : ""<include>000_common_txt/string_default.txt</include> }
+
+		//첨부 파일 경로;
+		, "path_file" : { "required" : 1, "description" : "첨부 파일 경로", "exampleValue" : ""<include>000_common_txt/string_default.txt</include> }
+
+		//첨부 파일 용량;
+		, "size" : { "required" : 1, "description" : "첨부 파일 용량", "exampleValue" : ""<include>000_common_txt/number_len0.txt</include> }
+	}
+}

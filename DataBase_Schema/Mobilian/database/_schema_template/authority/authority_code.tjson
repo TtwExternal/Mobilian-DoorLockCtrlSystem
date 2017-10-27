@@ -1,0 +1,99 @@
+{
+	"description" : "사용자의 권한 종류를 설정하는 code 명세"
+
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	,"dereference" : [
+		//"authority.auth_b2ker_c";
+		//, "authority.auth_b2ker_d";
+		//, "authority.auth_b2ker_r";
+		//, "authority.auth_b2ker_u";
+		"member.member_basic"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		//"auth_b2ker_c";
+		//, "auth_b2ker_d";
+		//, "auth_b2ker_r";
+		//, "auth_b2ker_u";
+		"member_basic"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"member"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+		"member.member_basic"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+		"member_basic"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"member"
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+
+		//해당 entity의 삭제 여부를 표현한다. (1 : 정상, 0 : 삭제);
+		"_d" : <include>100_common_json/_d.json</include>
+
+		//Unique Key, Primary Key(PK);
+		, "_id" : <include>100_common_json/_id.json</include>
+
+		//등록자 및 수정자 Register Member ID (FK);
+		, "_ids$member" : <include>100_common_json/_ids$member_register_modifier.json</include>
+
+		//시스템 코드;
+		//, "cd$category_system" : { "description" : "시스템 코드", "exampleValue" : "SYS0010"<>000_common_txt/string_default.txt</> };
+
+		//권한코드;
+		, "cd" : { "description" : "권한 코드", "exampleValue" : "100000"<include>000_common_txt/uint_len0_validate.txt</include> }
+
+		//권한 생성일(해당 권한이 생성된 일자);
+		, "date_create" : <include>120_date_json/date_create.json</include>
+
+		//Description( Default );
+		, "description" : { "description" : "Description(Default)", "exampleValue" : "가입 승인 대기자"<include>000_common_txt/string_default.txt</include> }
+
+		//Description( cn );
+		//, "description_cn" : { "description" : "Description(Default)", "exampleValue" : "가입 승인 대기자"<>000_common_txt/string_default.txt</> };
+
+		//Description( kr );
+		//, "description_kr" : { "description" : "Description(Default)", "exampleValue" : "가입 승인 대기자"<>000_common_txt/string_default.txt</> };
+
+		//Description( us );
+		//, "description_us" : { "description" : "Description(Default)", "exampleValue" : "가입 승인 대기자"<>000_common_txt/string_default.txt</> };
+
+		//권한 코드의 라벨;
+		, "nm" : { "description" : "권한 코드의 라벨", "exampleValue" : "가입 승인 대기"<include>000_common_txt/string_default.txt</include> }
+
+		//권한 코드의 라벨;
+		//, "nm_cn" : { "description" : "권한 코드의 라벨", "exampleValue" : "가입 승인 대기"<>000_common_txt/string_default.txt</> };
+
+		//권한 코드의 라벨;
+		//, "nm_kr" : { "description" : "권한 코드의 라벨", "exampleValue" : "가입 승인 대기"<>000_common_txt/string_default.txt</> };
+
+		//권한 코드의 라벨;
+		//, "nm_us" : { "description" : "권한 코드의 라벨", "exampleValue" : "가입 승인 대기"<>000_common_txt/string_default.txt</> };
+
+		//권한 참조 플래그
+		//, "auths_flag_reference" : { "description" : "권한 참조 플래그" <>000_common_txt/boolean.txt</> };
+
+		//제외될 물리 권한들;
+		//, "auths_exclude" : { "description" : "제외될 물리 권한 정보", "type" : "array", "valueDetail" : <>authority/authority_array.json</> };
+
+		//포함될 물리 권한들;
+		//, "auths_include" : { "description" : "포함될 물리 권한 정보", "type" : "array", "valueDetail" : <>authority/authority_array.json</> };
+
+	}
+}

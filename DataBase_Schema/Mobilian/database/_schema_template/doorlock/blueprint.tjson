@@ -1,0 +1,51 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//이 Collection에서 검색에 사용되는 Field;
+	, "search_field" : [
+		{
+			"property" : "_id$file_attachments"
+			, "label" : "첨부 파일 ID"
+		}
+		, {
+			"property" : "date"
+			, "label" : "등록 시간"
+		}
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//첨부 파일 Index;
+		, "_id$file_attachments" : { "required" : 1, "description" : "첨부 파일 Index", "exampleValue" : 0<include>000_common_txt/uint_len0.txt</include> }
+
+		//등록 시간 - Document가 생성된 시간;
+		, "date" : { "required" : 1, "description" : "등록 시간 - Document가 생성된 시간", "exampleValue" : "2017-09-06T08:58:48.367Z"<include>000_common_txt/date/date_len0.txt</include> }
+	}
+}

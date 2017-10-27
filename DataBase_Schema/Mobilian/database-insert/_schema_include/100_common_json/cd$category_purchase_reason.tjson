@@ -1,0 +1,4 @@
+{ "description" : "구매사유 코드 category_purchase_reason (FK)", "exampleValue" : "CPR001"<include>000_common_txt/string_len6.txt</include>
+	, "values" : [ "CPR001", "CPR002", "CPR003", "CPR004", "CPR999" ]
+	, "valuesMap" : { "CPR001" : NumberInt( 1 ), "CPR002" : NumberInt( 1 ), "CPR003" : NumberInt( 1 ), "CPR004" : NumberInt( 1 ), "CPR999" : NumberInt( 1 ) }
+}

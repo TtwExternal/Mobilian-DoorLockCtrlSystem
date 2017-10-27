@@ -1,0 +1,8 @@
+<div id="test__search_selector" style="color: #000; display: inline-grid; font-size: 15px;" evt_mclick="evt_mClick_call_ui_api">
+	<style>
+		display: block;
+	</style>
+
+	<h2>Static UI - Search Selector</h2>
+<include-html>./ui_include/test/search_selector.html</include-html>
+</div>

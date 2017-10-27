@@ -1,0 +1,5 @@
+{ "description" : "category partner logistics(FK)", "exampleValue" : "CPL001"
+	<include>000_common_txt/string_default.txt</include>
+	, "values" : [ "CPL001", "CPL002", "CPL003", "CPL004", "CPL005", "CPL006", "CPL007", "CPL008" ]
+	, "valuesMap" : { "CPL001" : NumberInt( 1 ), "CPL002" : NumberInt( 1 ), "CPL003" : NumberInt( 1 ), "CPL004" : NumberInt( 1 ), "CPL005" : NumberInt( 1 ), "CPL006" : NumberInt( 1 ), "CPL007" : NumberInt( 1 ), "CPL008" : NumberInt( 1 ) }
+}

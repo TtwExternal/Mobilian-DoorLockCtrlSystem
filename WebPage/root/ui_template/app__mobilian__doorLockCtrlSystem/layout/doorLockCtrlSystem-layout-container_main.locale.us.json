@@ -1,0 +1,7 @@
+{
+	"lb__MenuItem__Header" : "DoolLockCTRLSystem"
+	, "lb__MenuItem__DashBoard" : "DashBoard"
+	, "lb__MenuItem__Member_Management" : "Member Management"
+	, "lb__MenuItem__Device_Management" : "Device Management"
+	, "lb__MenuItem__Statistics" : "Statistics"
+}

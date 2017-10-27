@@ -1,0 +1,10 @@
+{
+			"description" : "update history", "exampleValue" : [{ "date" : [ NumberInt( 2016 ), NumberInt( 10 ), NumberInt( 10 ), NumberInt( 10 ), NumberInt( 10 ), NumberInt( 0 ) ], "_id$member_public" : NumberInt( 0 ) }, { "date" : [ NumberInt( 2016 ), NumberInt( 10 ), NumberInt( 11 ), NumberInt( 10 ), NumberInt( 10 ), NumberInt( 0 ) ], "_id$member_public" : NumberInt( 0 ) }], "type" : "array"
+
+			, "valueDetail" : {
+
+				"_id$member_public" : { "description" : "업데이트 수행자", "exampleValue" : NumberInt( 0 )<include>000_common_txt/uint_len0.txt</include> }
+
+				, "date" : { "description" : "업데이트 수행일"<include>000_common_txt/date/date__Array__YMD_HoMiSe.txt</include> }
+			}
+		}

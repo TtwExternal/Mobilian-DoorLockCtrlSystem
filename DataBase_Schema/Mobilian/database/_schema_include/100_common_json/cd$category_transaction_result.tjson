@@ -1,0 +1,9 @@
+{
+	"description" : "거래 상태 Category Transaction Result (FK)", "exampleValue" : "CTR001"
+
+	<include>000_common_txt/string_default.txt</include>
+
+	, "values" : [ "CTR001", "CTR002", "CTR003", "CTR004", "CTR005", "CTR006", "CTR007", "CTR008", "CTR009", "CTR010", "CTR011", "CTR012", "CTR013", "CTR014", "CTR015", "CTR016", "CTR017", "CTR018", "CTR019", "CTR020", "CTR021", "CTR022", "CTR023" ]
+
+	, "valuesMap" : { "CTR001" : 1, "CTR002" : 1, "CTR003" : 1, "CTR004" : 1, "CTR005" : 1, "CTR006" : 1, "CTR007" : 1, "CTR008" : 1, "CTR009" : 1, "CTR010" : 1, "CTR011" : 1, "CTR012" : 1, "CTR013" : 1, "CTR014" : 1, "CTR015" : 1, "CTR016" : 1, "CTR017" : 1, "CTR018" : 1, "CTR019" : 1, "CTR020" : 1, "CTR021" : 1, "CTR022" : 1, "CTR023" : 1 }
+}

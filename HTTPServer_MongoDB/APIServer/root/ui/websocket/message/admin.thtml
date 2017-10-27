@@ -1,0 +1,22 @@
+<div id="div-websocket-message-admin">
+
+	<include-html>./ui_include/common-div-title_bar/ModalPanel.html</include-html>
+
+	<div class="div-content">
+
+		<section class="section-btns">
+			<input class="input-time-random_loop" value="100"/>
+			<button class="btn-send-random_loop_start">무한 랜덤 전송</button>
+			<button class="btn-send-random_loop_stop">무한 랜덤 전송 중지</button>
+			<button class="btn-send">전송</button>
+		</section>
+
+		<fieldset><legend>전송 문자</legend>
+		<section class="section-input">
+			<textarea class="textarea-input" evt_kup="evt_kUp__sendMessage"></textarea>
+		</section>
+		</fieldset>
+
+	</div>
+
+</div>

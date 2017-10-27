@@ -1,0 +1,5 @@
+{
+	"description" : "Category Delivery Status ID (FK)", "exampleValue" : "CDS001"<include>000_common_txt/string_len6.txt</include>
+	, "values" : [ "CDS001", "CDS002", "CDS003", "CDS004", "CDS005", "CDS006" ]
+	, "valuesMap" : { "CDS001" : 1, "CDS002" : 1, "CDS003" : 1, "CDS004" : 1, "CDS005" : 1, "CDS006" : 1 }
+}

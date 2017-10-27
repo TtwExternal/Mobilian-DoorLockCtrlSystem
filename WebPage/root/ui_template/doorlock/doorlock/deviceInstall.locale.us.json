@@ -1,0 +1,46 @@
+{
+	"title" : "Install Device"
+
+	, "header__BasicInfo" : "Basic Information"
+	, "lb__MACAddr" : "MAC Address"
+	, "ph__MACAddr" : "EE-B6-A6-0E-C4-46"
+	, "lb__DateCreate" : "Create Date"
+
+	, "lb__Date_Y" : "Year"
+	, "lb__Date_M" : "Month"
+	, "lb__Date_D" : "Day"
+	, "lb__Date_HO" : "Hour"
+	, "lb__Date_MI" : "Minute"
+	, "lb__Date_SE" : "Seconds"
+
+
+	, "header__InstInfo" : "Installation Information"
+	, "lb__Installer" : "Installer"
+	, "ph__Installer" : "Mobilian"
+
+	, "lb__Status_Device" : "Device Status"
+	, "txt__SelectDeviceStatus" : "Select the status of the device"
+
+	, "lb__DeviceCTRLKey" : "Device Control Key"
+	, "ph__DeviceCTRLKey" : "?????"
+
+	, "lb__ManagementType" : "Management Type"
+	, "lb__ManagementType_Map" : "Map"
+	, "lb__ManagementType_BluePrint" : "Blueprint"
+
+	, "lb__CRS" : "Coordinate System"
+	, "lb__CoordX" : "Coordinates X"
+	, "ph__CoordX" : "Longitude( -180 ~ 180 )"
+	, "lb__CoordY" : "Coordinates Y"
+	, "ph__CoordY" : "Latitude( -90 ~ 90 )"
+
+	, "lb__BlueprintID" : "Blueprint's ID"
+	, "lb__BlueprintX" : "Blueprint X"
+	, "lb__BlueprintY" : "Blueprint Y"
+
+	, "lb__InstallAddr" : "Installation Address"
+	, "ph__InstallAddr" : "254, Beotkkot-ro, Geumcheon-gu, Seoul, Republic of Korea"
+
+	, "btn__Submit" : "Submit"
+	, "btn__Cancel" : "Cancel"
+}
